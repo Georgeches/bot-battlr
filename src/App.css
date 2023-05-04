@@ -1,38 +1,136 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808080; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d; 
+}
+
+body{
+  background-color: #d9d9d9;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+header{
   text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 80px; 
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  margin-left: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h3{
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selected-bots{
+  background-color: white;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+
+.all-bots{
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.all-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.list-body{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-body button{
+  height: 50px;
+  background-color: rgb(194, 194, 194);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div-header{
+  padding-left: 50px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.bot{
+  border: 1px solid rgb(228, 228, 228);
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  list-style-type: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+  transition: all 0.5s;
+}
+
+.bot:hover{
+  background-color: rgb(141, 141, 141);
+  color: rgb(30, 30, 30);
+}
+
+.bot-hover-info{
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.bot-info{
+  padding-left: 30px;
+  padding-right: 30px;
+  word-wrap:break-word;
+  text-align: left;
+}
+
+.short-info{
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+}
+
+.short-info p:last-child{
+  color: #000000;
+}
+
+.las{
+  font-size: 25px;
+}
+
+li{
+  list-style-type: none;
 }
